@@ -199,6 +199,13 @@ article div.main-article{
 
 /*Register*/
 
+section.register-form{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
 section.register-form input.text{
     border: none;
     border-radius: 5px;
@@ -217,32 +224,52 @@ section.register-form form{
 div.solicitud-nombre{
     text-align: center;
     margin: 10px;
+    width: 100%;
 }
 
 div.solicitud-email{
     text-align: center;
     margin: 10px;
+    width: 100%;
 }
 
 div.solicitud-date{
     text-align: center;
     margin: 10px;
+    width: 100%;
+}
+
+div.solicitud-domicilio{
+    text-align: center;
+    margin: 10px;
+    width: 100%;
 }
 
 section.register-form h3{
     margin: 10px;
+    font-size: 22px;
 }
 
 div.perfil-usuario{
     width: 90%;
     margin: 10px;
     text-align: center;
+    width: 100%;
+}
+
+div.perfil-usuario label{
+    margin-right: 11px;
 }
 
 div.intereses{
     margin: 10px;
     justify-self: center;
-    text-align: center;
+    text-align: start;
+}
+
+div.intereses h4{
+    font-weight: normal;
+    margin: 5px;
 }
 
 div.intereses label{
@@ -253,15 +280,26 @@ div.intereses label{
 div.solicitud-foto{
     text-align: center;
     margin: 10px;
+    width: 100%;
+}
+
+section.register-form input.text{
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 5px;
+    width: 90%;
 }
 
 div.password{
     margin: 10px;
     text-align: center;
+    width: 100%;
 }
 
 div.password input{
-    margin: 10px;margin: 5px;
+    margin: 10px;
+    margin: 5px;
 }
 
 div.password label{
@@ -289,7 +327,7 @@ div.button-register-submit{
     text-align: center;
     margin-bottom: 5px;
     border: 1px solid black;
-    padding: 5px;
+    padding: 5px 7px;
     border-radius: 5px;
     background-color: #0022AA;
     transition-property: background-color, color;
@@ -318,18 +356,95 @@ div.button-register-submit:hover a{
     }
 
 div.button-register-reset{
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin-bottom: 5px;
 }
 
+div.button-register-reset button{
+    margin-bottom: 5px;
+    border: 1px solid black;
+    padding: 7px 6px;
+    border-radius: 5px;
+    background-color: #0022AA;
+    color: white;
+}
 
 
 /*login*/
-form.login-form{
+
+section.login-form{
+    margin-bottom: 20%;
+}
+
+section.login-form form{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+section.login-form form label{
+    display: none;
+}
+
+section.login-form form input{
+    font-size: 16px;
+    margin: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+}
+
+div.login-header p{
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+div.login-email{
+    text-align: center
+}
+
+div.login-password{
+    text-align: center
+}
+
+div.login-submit{
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0022AA;
+    text-align: center;
+}
+
+div.login-submit a{ 
+    color: white;
+    text-decoration: none;
+}
+
+div.login-register{
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0022AA;
+    text-align: center;
+}
+
+div.login-register a{ 
+    color: white;
+    text-decoration: none;;
+}
+
 
 
 /*Footer*/
@@ -365,6 +480,9 @@ footer .footer-texto-descripciones{
     text-align: center;
 }
 
+footer div p{
+    margin: 5px;
+}
 
 
 /*Media de 361px*/
@@ -445,31 +563,73 @@ footer .footer-texto-descripciones{
     }
 
     /*Register*/
+
+    section.register-form{
+        margin: none;
+        border: none;
+        border-radius: none;
+    }
+    
     div.solicitud-nombre {
         text-align: center;
         margin: 10px;
-        width: 55%;
     }
 
     div.solicitud-date {
         text-align: center;
         margin: 10px;
-        width: 55%;
     }
 
     div.solicitud-email {
         text-align: center;
         margin: 10px;
-        width: 55%;
     }
 
     div.solicitud-domicilio{
-        width: 55%;
         text-align: center;
     }
 
-    
-    
+    section.register-form form {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    /*Login*/
+
+    section.login-form{
+        margin-bottom: 319px;
+    }
+
+    section.login-form form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-content: center;
+    }
+
+    section.login-form form input {
+        width: 95%;
+    }
+
+    div.login-header{
+        display: block;
+    }
+
+    div.login-header p{
+        font-size: 22px;
+    }
 
     /*Footer*/
 
@@ -502,4 +662,102 @@ footer .footer-texto-descripciones{
     footer .footer-texto-descripciones{ 
         text-align: center;
     }
+}
+
+@media (min-width: 1024px){
+    /*Header-top*/
+    header div.logo {
+        width: 30%;
+    }
+
+    header .form {
+        width: 40%;
+    }
+
+    header div.top-header p {
+        width: 30%;
+    }
+
+    header .form .input {
+        font-size: 16px;
+    }
+
+    header .form .submit {
+        height: 39px;
+    }
+
+    div.submit i {
+        padding-top: 10px;
+    }
+
+    header div.top-header p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    /*Header-bot*/
+
+    header ul li a {
+        font-size: 16px;
+    }
+
+    /*Register*/
+    div.password {
+        margin: 10px;
+        width: 90%;
+        text-align: center;
+    }
+
+    /*Login*/
+    section.login-form form {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1390px){
+    /*Header-top*/
+    header div.logo {
+        width: 30%;
+    }
+
+    header .form {
+        width: 45%;
+    }
+
+    header div.top-header p {
+        width: 25%;
+    }
+
+    header .form .input {
+        font-size: 23px;
+    }
+
+    header .form .submit {
+        height: 48px;
+        width: 27px;
+    }
+
+    div.submit i {
+        padding-top: 14px;
+        font-size: 20px;
+    }
+
+    header div.top-header p {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    /*Header-bot*/
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    /*Register*/
+
+    section.register-form {
+        width: 70%;
+        margin: auto;
+    }
+
 }
