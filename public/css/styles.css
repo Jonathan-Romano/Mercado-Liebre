@@ -712,6 +712,7 @@ footer div p{
     section.login-form form {
         width: 40%;
     }
+
 }
 
 @media (min-width: 1390px){
@@ -758,6 +759,29 @@ footer div p{
     section.register-form {
         width: 70%;
         margin: auto;
+    }
+
+    /*Footer*/
+
+    section.login-form {
+        margin-bottom: 535px;
+    }
+
+    footer .footer-iconos {
+        font-size: 22px;
+    }
+
+    footer .footer-texto-titulares {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    footer .footer-texto-descripciones {
+        font-size: 15px;
+    }
+
+    footer div p {
+        font-size: 15px;
     }
 
 }
